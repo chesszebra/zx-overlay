@@ -1,0 +1,28 @@
+.zx-overlay {
+  align-items: center;
+  bottom: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+.zx-overlay-parent {
+  @extend .zx-overlay;
+
+  align-items: start;
+  background-color: #f5f6fa;
+  position: absolute;
+  padding-top: 50px;
+}
+
+.zx-overlay-darken {
+  background-color: rgba(0, 0, 0, 0.5);
+}
